@@ -11,7 +11,7 @@ export default function AddMovie() {
     genre: "",
   });
 
-  const { name, imdbRating, genre } = movie;
+  const { name, imdbRating, genre, suggestedBy, avalaibleIn } = movie;
 
   const onInputChange = (e) => {
     setMovie({ ...movie, [e.target.name]: e.target.value });
@@ -63,6 +63,30 @@ export default function AddMovie() {
                 className="form-control"
                 name="genre"
                 value={genre}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="Genre" className="form-label">
+                SuggestedBy
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                name="suggestedBy"
+                value={suggestedBy}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="Genre" className="form-label">
+                AvalaibleIn
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                name="avalaibleIn"
+                value={avalaibleIn}
                 onChange={(e) => onInputChange(e)}
               />
             </div>

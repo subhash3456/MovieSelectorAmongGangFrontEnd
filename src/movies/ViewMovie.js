@@ -40,6 +40,14 @@ export default function ViewMovie() {
                   <b>Genre:</b>
                   {movie.genre}
                 </li>
+                <li className="list-group-item">
+                  <b>SuggestedBy:</b>
+                  {movie.suggestedBy}
+                </li>
+                <li className="list-group-item">
+                  <b>AvalaibleIn:</b>
+                  {movie.avalaibleIn}
+                </li>
               </ul>
             </div>
           </div>

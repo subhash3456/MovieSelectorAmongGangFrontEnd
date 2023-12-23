@@ -33,6 +33,8 @@ export default function Home() {
               <th scope="col">MovieName</th>
               <th scope="col">Rating</th>
               <th scope="col">Genre</th>
+              <th scope="col">SuggestedBy</th>
+              <th scope="col">AvalaibleIn</th>
             </tr>
           </thead>
           <tbody>
@@ -44,6 +46,8 @@ export default function Home() {
                 <td>{movie.name}</td>
                 <td>{movie.imdbRating}</td>
                 <td>{movie.genre}</td>
+                <td>{movie.suggestedBy}</td>
+                <td>{movie.avalaibleIn}</td>
                 <tb>
                   <Link
                     className="btn btn-primary mx-2"
